@@ -6,8 +6,7 @@ var server = http.createServer();
 
 server.on('request', function (req, res) {
   fs.createReadStream('index.html')
-  .pipe(res)
-  .on('end', res.end);
+  .pipe(res);
 });
 
 server.listen(port);
