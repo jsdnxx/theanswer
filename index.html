@@ -52,7 +52,7 @@ h3{
 
   // do some stuff
   var location = window.location.href;
-  var subdomainRegx = /\/\/(\w+)./;
+  var subdomainRegx = /\/\/([^.]+)./;
   function getSubdomain() {
     return location.match(subdomainRegx)[1];
   }
