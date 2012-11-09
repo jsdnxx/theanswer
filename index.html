@@ -21,7 +21,7 @@ h1, h2, h3{
 h1{
   font-weight: 800;
   font-size: 80px;
-  line-height: 50px;
+  line-height: 80%;
 }
 h2{
   font-weight: 500;
@@ -48,6 +48,7 @@ h3{
   // here's my polyfill
   if (!('querySelector' in document)) {
     document.write('stop being mean');
+    if (document.all) { document.write(' - seriously, I mean it.'); }
   }
 
   // do some stuff
