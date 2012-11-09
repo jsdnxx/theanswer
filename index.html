@@ -1,0 +1,89 @@
+<!doctype html>
+<head>
+<title>hella</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+body{
+  font-family: 'Source Code Pro', sans-serif;
+  backgorund-color: #fff;
+  color: #222;
+  text-transform: uppercase;
+}
+div{
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+h1, h2, h3{
+  margin: 0;
+}
+h1{
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 50px;
+}
+h2{
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 4.8px;
+}
+h3{
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 4.8px;
+  border-top: 2px solid #222;
+  padding-top: 20px;
+}
+</style>
+</head>
+<body>
+<div data-needs-moar="wrapper">
+<h1>unicorns</h1>
+<h2>are the answer</h2>
+<h3>what was the question?</h3>
+</div>
+<script>
+!function () {
+  // here's my polyfill
+  if (!('querySelector' in document)) {
+    document.write('stop being mean');
+  }
+
+  // do some stuff
+  var location = 'https://types.heroku.com/apps';
+  //var location = window.location.href;
+  var subdomainRegx = /\/\/(\w+)./;
+  function getSubdomain() {
+    return location.match(subdomainRegx)[1];
+  }
+
+  document.querySelector('h1').innerText = getSubdomain();
+
+  // add some patterns... companyValuation++
+  function cardinalityNormalizerFactory (gratuitousLocationDepdendencyVariable) {
+    return function () {
+      this.isSingular = gratuitousLocationDepdendencyVariable.indexOf('aretheanswer') < 0;
+    }
+  }
+  var CardinalityNormalizer = new cardinalityNormalizerFactory(location);
+  var cardinalityNormlizer = new CardinalityNormalizer();
+
+  if (cardinalityNormlizer.isSingular) {
+    var h2 = document.querySelector('h2');
+    h2.innerText = h2.innerText.replace('are','is');
+  }
+}();
+// add some semicolons to make up for all the ones other
+// devs leave out
+ ;;;
+ ;;;
+
+ ;;;
+ ;;;
+  ;
+ ;
+</script>
+<script> /* track all the things */ var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-36199358-1"]),_gaq.push(["_trackPageview"]),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}() </script>
+</body>
+</html>
+<!-- a @leJDen joint -->
