@@ -50,8 +50,7 @@ h3{
   }
 
   // do some stuff
-  var location = 'https://types.heroku.com/apps';
-  //var location = window.location.href;
+  var location = window.location.href;
   var subdomainRegx = /\/\/(\w+)./;
   function getSubdomain() {
     return location.match(subdomainRegx)[1];
