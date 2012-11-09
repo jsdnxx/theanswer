@@ -57,7 +57,11 @@ h3{
     return location.match(subdomainRegx)[1];
   }
 
-  document.querySelector('h1').innerText = getSubdomain();
+  function makeHumanReadable(gobledygook) {
+    return gobledygook.replace(/[-_]/g, ' ');
+  }
+
+  document.querySelector('h1').innerText = makeHumanReadable(getSubdomain());
 
   // add some patterns... companyValuation++
   function cardinalityNormalizerFactory (gratuitousLocationDepdendencyVariable) {
